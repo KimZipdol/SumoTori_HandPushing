@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         tr.Translate(moveDir.normalized * moveSpd * Time.deltaTime, Space.Self);
 
 
-        if (Input.GetButton("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
             _anim.SetTrigger(hashAtk);
         }
