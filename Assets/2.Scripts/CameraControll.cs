@@ -16,6 +16,7 @@ public class CameraControll : MonoBehaviour
 
     private void Update()
     {
+
         Vector3 base1 = Player2.transform.position - Player1.transform.position;
         center = (Player2.transform.position + Player1.transform.position) * 0.5f;
         Vector3 norm = Vector3.Cross(base1, Vector3.up);

@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
 
-        Vector3 moveDir = (Vector3.forward * v) + (Vector3.right * h);
+        Vector3 moveDir = (Vector3.forward * h) * -1 + (Vector3.right * v);
 
         tr.Translate(moveDir.normalized * moveSpd * Time.deltaTime, Space.Self);
 
