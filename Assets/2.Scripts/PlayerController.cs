@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpd;
     public Animator _anim;
+    public GameObject opponent;
 
     int hashAtk;
     float h;
@@ -26,7 +27,7 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDir = (Vector3.forward * h) * -1 + (Vector3.right * v);
 
         tr.Translate(moveDir.normalized * moveSpd * Time.deltaTime, Space.Self);
-
+        tr.LookAt(opponent.transform);
 
         if (Input.GetButtonDown("Jump"))
         {

@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4341805453635254}
   - component: {fileID: 54943583757195774}
   - component: {fileID: 136785705579082782}
+  - component: {fileID: 95745889220049928}
+  - component: {fileID: 114741719439949434}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -168,7 +170,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1687273035951264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.2, z: 0.43}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0.45}
   m_LocalScale: {x: 1.2, y: 1.5, z: 0.1}
   m_Children: []
   m_Father: {fileID: 4039904627319054}
@@ -181,7 +183,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1466765492783492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.2, z: 0.43}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0.45}
   m_LocalScale: {x: 1.2, y: 1.5, z: 0.1}
   m_Children: []
   m_Father: {fileID: 4286391725969598}
@@ -487,6 +489,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.2, z: 0.8}
   m_Center: {x: 0.00000005960466, y: -0.87, z: -0.00000008940699}
+--- !u!95 &95745889220049928
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1008006101925190}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 111e99238a83d254dae850a1ee37c441, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114741719439949434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1008006101925190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738de677c779c614b8317dd5092a76db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!136 &136785705579082782
 CapsuleCollider:
   m_ObjectHideFlags: 1
